@@ -1,0 +1,40 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+
+# Local corpora, message exports, and experiment artifacts
+/data/**
+!/data/README.md
+/artifacts/**
+!/artifacts/README.md
+exports/
+checkpoints/
+runs/
+logs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+# Credentials and machine-specific files
+.env
+.env.*
+!.env.example
+.DS_Store
+.idea/
+.vscode/
