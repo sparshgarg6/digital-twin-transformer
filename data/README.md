@@ -32,4 +32,6 @@ The planned preparation pipeline should:
 
 Do not mix results on this private corpus with the original public-corpus comparison. Do not publish excerpts from either raw messages or model outputs without reviewing them for copied or identifying content.
 
-No export, parser, corpus, or preprocessing implementation is provided yet.
+See the [Messages export guide](../docs/IMESSAGE_EXPORT.md) for the local archive workflow. `scripts/convert_messages_export.py` validates saved Messages connector pages and writes JSONL, a transcript, and a receipt. `scripts/messages_wrapped.py` can then create an optional aggregate recap. A runnable example uses [invented messages](../examples/messages-export/README.md).
+
+These archives retain source identifiers and attachment metadata for fidelity. Anonymous training-data preparation, conversation/session segmentation, and training-window construction are not implemented yet. Keep real recaps and generated graphics in the ignored `artifacts/` directory as well.

@@ -19,12 +19,14 @@ This stage starts after the learning models work. It is a separate experiment wi
 - [ ] Agree on the target speaker, allowed data, and a small first use case.
 - [ ] Define a synthetic conversation fixture with stable speaker labels and clear turn boundaries.
 - [ ] Choose an explicit input/output format for a conversation prefix and the target speaker's next reply.
-- [ ] Build and check a local text-only export parser against the fixture.
+- [x] Document local export routes and validate connector-page conversion with invented fixtures.
+- [x] Add a separate combined Messages Wrapped utility for optional archive exploration.
+- [ ] Build a training-data preparation step against a synthetic conversation fixture.
 - [ ] Prepare an agreed message export locally; exclude attachments initially.
 - [ ] Reserve later, whole conversations for evaluation before constructing training windows.
 - [ ] Compare the model against simple baselines, such as common replies and retrieved training replies.
 
-The parser, conversation format, and any changes to the training objective remain design work. They are not implemented in this scaffold.
+Local archive conversion and aggregate exploration are implemented. The anonymous training format, session boundaries, and any changes to the training objective remain design work.
 
 ## 3. Evaluate before building an interface
 

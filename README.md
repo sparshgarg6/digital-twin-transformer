@@ -2,7 +2,7 @@
 
 A learning project to build a character-level language model from scratch, then explore whether a small conversational model can capture a person's writing style using their own message history.
 
-**Status:** repository scaffold. No models have been implemented or trained, and no personal conversations are included.
+**Status:** learning scaffold with local Messages export and recap utilities. No models have been implemented or trained, and no personal conversations are included.
 
 ## The idea
 
@@ -46,6 +46,21 @@ python -c "import torch; print('PyTorch:', torch.__version__); print('CUDA:', to
 
 There is no training command yet. Each session describes the code to write and the behavior to verify.
 
+## Export and explore a conversation locally
+
+The [Messages export guide](docs/IMESSAGE_EXPORT.md) covers Mac TXT/HTML exports, archiving one exact chat through the Messages connector, and checking archive completeness. The included Python utilities use the standard library and operate on explicitly supplied local files:
+
+- `scripts/convert_messages_export.py` validates saved connector pages and writes chronological JSONL, a readable transcript, and an export receipt.
+- `scripts/messages_wrapped.py` creates a combined recap of activity, selected phrases, tracked emoji, and game-title appearances.
+
+Try the complete workflow with the [invented example](examples/messages-export/README.md). Personal archives and recaps belong in the ignored `data/` and `artifacts/` directories. The archive preserves source metadata; preparing anonymous training examples remains a separate step.
+
+Run the utility checks without installing PyTorch:
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
 ## Repository layout
 
 ```text
@@ -53,6 +68,11 @@ data/                  Local corpora and message exports; contents ignored by Gi
 artifacts/             Local checkpoints, samples, and run outputs; contents ignored by Git
 docs/ROADMAP.md        Learning milestones and the conversational-model experiment
 docs/EXPERIMENT_LOG.md  Template for comparable runs
+docs/IMESSAGE_EXPORT.md Local archive and optional Wrapped workflow
+docs/MESSAGES_WRAPPED.md Recap interpretation and graphic prompt
+scripts/               Local export conversion and aggregate recap tools
+examples/messages-export/ Invented connector pages for a complete example
+tests/                 Utility checks using invented messages
 sessions/01-bigram/     Counting baseline
 sessions/02-mlp/        Fixed-context neural model
 sessions/03-transformer/ Causal transformer
@@ -60,7 +80,7 @@ sessions/03-transformer/ Causal transformer
 
 ## Personal conversation experiments
 
-Keep the public learning experiment separate from the private message experiment. The roadmap covers local export preparation, speaker identity, conversation boundaries, and evaluation on later conversations. Begin with synthetic conversations before using any real messages.
+Keep the public learning experiment separate from the private message experiment. Export utilities are available; the roadmap still covers training-data preparation, speaker identity, conversation boundaries, and evaluation on later conversations. Begin with synthetic conversations before using any real messages.
 
 Raw exports, identifying metadata, private generated samples, and weights trained on personal messages belong in the ignored `data/` and `artifacts/` directories. The original planning documents and chat screenshots are not part of this repository. A Git ignore rule prevents normal staging; it does not remove anything already committed.
 

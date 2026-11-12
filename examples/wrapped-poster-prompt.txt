@@ -1,0 +1,37 @@
+Use case: infographic-diagram.
+Asset type: a polished portrait Messages Wrapped poster, approximately 2:3.
+
+Create a funny, affectionate recap using only the reviewed combined statistics below. Use bold legible typography, oversized numerals, a clear reading order, and playful chat/game illustrations. Keep all text readable at phone size. Use an original design with no service logos or watermark.
+
+Replace every bracketed placeholder before generation; delete unused blocks. Do not invent facts or infer relationship quality. Game figures count message-title appearances. An active-day streak is not a count of individual check-ins.
+
+Exact header:
+"[DISPLAY NAMES OR ANONYMOUS LABELS]"
+"MESSAGES WRAPPED"
+"[COVERED DATE RANGE]"
+
+Hero:
+"[RECORD COUNT]"
+"messages, reactions & game updates"
+
+Shared activity:
+"[LONGEST ACTIVE-DAY STREAK] DAYS STRAIGHT"
+"The world's cutest attendance sheet."
+
+Selected phrase:
+"[PHRASE COUNT] [SELECTED PHRASE]"
+"At this point, it's punctuation."
+
+Optional reviewed greeting, shared with permission:
+"[GREETING OR INVENTED EXAMPLE]"
+"A greeting with opening credits."
+
+Optional game-title section:
+"ARCADE MODE"
+"[GAME TITLE AND COUNT]"
+"A rom-com with multiplayer enabled."
+
+Small source note:
+"Based on the available export. Game figures count message titles; phrase counts exclude recognized automatic reaction captions."
+
+Constraints: preserve exact data and spelling. Make jokes about shared habits, not either person's shortcomings. No response-time comparisons, individual affection scores, diagnoses, or fabricated superlatives. Include no contact identifiers, message excerpts, or likenesses unless explicitly selected for this graphic. Review the result before sharing.

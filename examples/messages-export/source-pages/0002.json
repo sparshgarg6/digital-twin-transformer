@@ -1,0 +1,8 @@
+{
+  "chats": [{"local_ref": "another-chat-ref", "chat_guid": "demo-direct-chat", "display_name": "Invented example"}],
+  "senders": [{"local_ref": "another-person-ref", "handle": "person@example.invalid", "name": "Other speaker", "service": "iMessage"}],
+  "messages": [
+    {"chat": "another-chat-ref", "sender": "me", "date": "2026-01-02T18:00:02Z", "body": "Chess"},
+    {"chat": "another-chat-ref", "sender": "another-person-ref", "date": "2026-01-02T18:00:01Z", "body": "Good morning!", "attachments": [{"id": "invented-attachment", "filename": "demo-photo.png", "mime_type": "image/png", "size_bytes": 42}]}
+  ]
+}
