@@ -1,0 +1,9 @@
+{
+  "chats": [{"local_ref": "chat0", "chat_guid": "demo-direct-chat", "display_name": "Invented example"}],
+  "senders": [{"local_ref": "person0", "handle": "person@example.invalid", "name": "Other speaker", "service": "iMessage"}],
+  "messages": [
+    {"chat": "chat0", "sender": "person0", "date": "2026-01-02T18:00:04Z", "body": "Tea sounds good ☕"},
+    {"chat": "chat0", "sender": "me", "date": "2026-01-02T18:00:03Z", "body": "Good morning, friend!\nTea after class?"}
+  ],
+  "next_cursor": "invented-continuation-cursor"
+}
